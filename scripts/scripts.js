@@ -33,6 +33,8 @@ function checkForMatch() {
 function disableCards() {
       firstCard.removeEventListener('click', flipCard);
       secondCard.removeEventListener('click', flipCard);
+      firstCard = null;
+      secondCard = null;
 }
 
 
