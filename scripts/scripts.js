@@ -1,10 +1,9 @@
 const cards = document.querySelectorAll('.memory-card');
-export let hasFlippedCard = false;
+let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 
-function flipCard() {
-      console.log(hasFlippedCard)
+ function flipCard() {
       if (lockBoard) return;
       if (this === firstCard) return;
       this.classList.add('flip');
@@ -53,7 +52,7 @@ function unflipCards() {
       });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard()));
+cards.forEach(card => card.addEventListener('click', flipCard)); 
 
 export const testables = {
       flipCard,
