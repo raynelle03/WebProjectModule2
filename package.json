@@ -8,7 +8,11 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "jest": "^26.4.2"
+    "@babel/preset-env": "^7.11.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.4.2",
+    "jsdom": "^16.4.0"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,12 @@
   "bugs": {
     "url": "https://github.com/raynelle03/WebProjectModule2/issues"
   },
-  "homepage": "https://github.com/raynelle03/WebProjectModule2#readme"
+  "homepage": "https://github.com/raynelle03/WebProjectModule2#readme",
+  "setupFiles": "<rootDir>/private/jest/setup.js",
+  "jest": {
+    "globals": {
+       "__DEV__": true,
+       "__RCTProfileIsProfiling": false
+     }
+    }
 }
