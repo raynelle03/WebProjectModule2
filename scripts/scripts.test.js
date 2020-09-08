@@ -61,7 +61,6 @@ function createMockAppleAndCupCakeCards() {
     '<img class="back-face" src="images/cover.svg" alt="Memory Card">' +
     "</div>";
   const domEnd = "</body> </html>";
-
   return new JSDOM(domStart + appleCard + cupcakeCard + domEnd);
 }
 
